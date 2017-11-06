@@ -1,2 +1,4 @@
 language: python
+rvm:
+  - 3.6.3
 repo_token: NLIB3EPimU8GwgpKi5TRo5XDfsYybTiXp

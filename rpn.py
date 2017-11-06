@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import operator
+import readline
+from termcolor import colored, cprint
 ops = {
     '+': operator.add,
     '-': operator.sub,
@@ -23,7 +25,8 @@ def calculate(arg):
                 stack.append(result)
 
             except ArithmeticError:
-                print("Improper Arithmetic")
+                #print("Improper Arithmetic")
+                cprint("Improper Arithmetic","yellow")
                 return -1
 
             except:

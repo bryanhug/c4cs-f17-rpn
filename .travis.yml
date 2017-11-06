@@ -4,8 +4,6 @@ python:
   - nightly
 # command to install dependencies
 install:
-  - pip install .
-  - pip install -r requirements.txt
+  - pip install termcolor
 # command to run tests
 script: make
-repo_token: NLIB3EPimU8GwgpKi5TRo5XDfsYybTiXp

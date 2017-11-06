@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import operator
 import readline
+
 from termcolor import colored, cprint
 ops = {
     '+': operator.add,
@@ -26,14 +27,15 @@ def calculate(arg):
 
             except ArithmeticError:
                 #print("Improper Arithmetic")
-                cprint("Improper Arithmetic","yellow")
+                cprint("Improper Arithmetic","red",attrs=['bold','blink'])
                 return -1
 
             except:
-                print("Improper use of calculator")
+                cprint("Improper use of calculator","red", attrs=['bold','blink'])
                 return -1
 
-    print(stack)
+    #cprint(arg,"red",stack,"green")
+    cprint(stack,"green")
     return stack.pop()
 
 def main():

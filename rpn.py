@@ -8,10 +8,6 @@ ops = {
 }
 
 def calculate(arg):
-    try:
-        arg.split
-    except KeyboardIn
-
     stack =  list()
     for token in arg.split():
         try:
